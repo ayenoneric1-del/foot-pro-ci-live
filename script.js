@@ -1,8 +1,6 @@
-// Configuration de la clé API Football-Data.org
-const API_KEY = c3a2b2533c1e452687c7b66ea536e404
+const API_KEY = "3fced67ba9e84097bee39bbd869fffcc";
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Mettre à jour l'étiquette de statut
     const badge = document.querySelector(".badge, .etiquette, .header-badge");
     if (badge) {
         badge.textContent = "🟢 Données connectées";
@@ -10,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         badge.style.color = "#4ade80";
     }
 
-    // 2. Gestion de l'installation sur téléphone (PWA)
     let deferredPrompt;
     const installBtn = document.getElementById("install");
     window.addEventListener("beforeinstallprompt", (e) => {
@@ -32,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 3. Matchs du jour (Heure GMT / Abidjan)
     const matchesList = [
         {
             league: "Ligue des champions",
@@ -114,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderMatches(matchesList);
 
-    // 4. Moteur de recherche
     const searchInput = document.getElementById("search");
     if (searchInput) {
         searchInput.addEventListener("input", (e) => {
@@ -128,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 5. Filtres (En direct, Résultats...)
     const filterButtons = document.querySelectorAll("nav button");
     filterButtons.forEach(btn => {
         btn.addEventListener("click", () => {
@@ -146,4 +140,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-3fced67ba9e84097bee39bbd869fffcc
