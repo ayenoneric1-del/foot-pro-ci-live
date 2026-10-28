@@ -1,5 +1,5 @@
 // Configuration de la clé API Football-Data.org
-const API_KEY = "3fced67ba9e84097bee39bbd869fffcc";
+const API_KEY = c3a2b2533c1e452687c7b66ea536e404
 
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Mettre à jour l'étiquette de statut
